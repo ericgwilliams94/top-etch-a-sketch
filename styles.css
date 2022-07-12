@@ -1,12 +1,26 @@
+:root {
+    --grey: #F5F5F5;
+    --darkpurple: #42213D;
+}
+
+
 * {
+    background-color: var(--grey);
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
+    color: var(--darkpurple);
     font-family: 'VT323', monospace;
     font-size: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 
