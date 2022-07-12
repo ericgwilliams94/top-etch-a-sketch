@@ -16,24 +16,45 @@
     </head>
 
     <body>
+        <div class="title">
+            <h1>Etch-A-Sketch</h1>
+            <h3>Click & Drag to Draw!</h3>
+        </div>
+
         <div class="container">
-            <div class="title">
-                <h1>Etch-A-Sketch</h1>
-                <h3>Click & Drag to Draw!</h3>
-            </div>
+            
 
-            <div class="grid">
+            <div class="grid right">
 
             </div>
 
-            <div class="selections">
+            <div class="selections left">
+                <div class="color">
+
+                </div>
                 <!-- color picker -->
+                <button class="selectionBtn" id="colorSelection">
+                    <div></div>
+                </button>
+                <!-- color mode -->
+                <button class="selectionBtn" id="colorMode">
+                    <div>Color Mode</div>
+                </button>
                 <!-- rainbow mode -->
+                <button class="selectionBtn" id="rainbowMode">
+                    <div>Rainbow Mode</div>
+                </button>
                 <!-- eraser button -->
+                <button class="selectionBtn" id="eraserBtn">
+                    <div>Eraser</div>
+                </button>
                 <!-- clear button-->
+                <button class="selectionBtn" id="clearBtn">
+                    <div>Clear</div>
+                </button>
                 <!-- grid size slider -->
                 <div class="sliderContainer">
-                    <input type="range" min="1" max="100" class="slider" id="myRange">
+                    <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
                 </div>
 
             </div>

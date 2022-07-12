@@ -1,6 +1,8 @@
 :root {
     --grey: #F5F5F5;
     --darkpurple: #42213D;
+    --byzanium: #683257;
+    --black: #000;
 }
 
 
@@ -17,14 +19,66 @@ h1 {
     font-size: 60px;
 }
 
-.container {
+.title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
 
+/* SELECTIONS DIV SECTION */
+button {
+    cursor: pointer;
+}
 
+/* selection button styling */
+.selectionBtn {
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+
+/* slider */
+.sliderContainer {
+    width: 50%;
+}
+
+.slider {
+    appearance: none;
+    background: var(--grey); 
+    border-radius: 10px;
+    opacity: 0.7;
+    outline: solid;
+    transition: opacity .2s;
+    -webkit-appeareance: none;
+    -webkit-transition: .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 10px;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: var(--black); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.slider::-moz-range-thumb {
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background:var(--black); /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+/* FOOTER */
 .footer {
     bottom: 0;
+    margin: 2px;
     position: absolute;
 }
