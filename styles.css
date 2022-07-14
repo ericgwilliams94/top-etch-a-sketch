@@ -1,6 +1,6 @@
 :root {
     --grey: #F5F5F5;
-    --darkpurple: #42213D;
+    --forestgreen: #273E2E;
     --byzanium: #683257;
     --black: #000;
 }
@@ -15,7 +15,7 @@
 
 /* TAG STYLING*/
 h1 {
-    color: var(--darkpurple);
+    color: var(--forestgreen);
     font-family: 'VT323', monospace;
     font-size: 60px;
 }
@@ -37,6 +37,14 @@ button {
     align-items: center;
     display: flex;
     gap: 25px;
+}
+
+/* color picker button */
+#colorPicker {
+    border-radius: 100%;
+    height: 50px;
+    padding: 0;
+    width: 50px;
 }
 
 /* selection button styling */
