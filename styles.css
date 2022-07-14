@@ -5,7 +5,7 @@
     --black: #000;
 }
 
-
+/* GENERAL STYLING */
 * {
     background-color: var(--grey);
     font-family: 'Lato', sans-serif;
@@ -13,12 +13,18 @@
     padding: 0;
 }
 
+/* TAG STYLING*/
 h1 {
     color: var(--darkpurple);
     font-family: 'VT323', monospace;
     font-size: 60px;
 }
 
+button {
+    cursor: pointer;
+}
+
+/* TITLE DIV SECTION */
 .title {
     display: flex;
     flex-direction: column;
@@ -27,8 +33,10 @@ h1 {
 }
 
 /* SELECTIONS DIV SECTION */
-button {
-    cursor: pointer;
+.left, .right {
+    align-items: center;
+    display: flex;
+    gap: 25px;
 }
 
 /* selection button styling */
@@ -36,6 +44,10 @@ button {
     border-radius: 10px;
     font-size: 16px;
     padding: 5px;
+}
+
+.selectionBtn:hover {
+    transform: scale(1.1);
 }
 
 
@@ -75,6 +87,13 @@ button {
     background:var(--black); /* Green background */
     cursor: pointer; /* Cursor on hover */
   }
+
+/* GRID DIV SECTION */
+.grid {
+    border: solid 1px black;
+    height: 720px;
+    width: 720px;
+}
 
 /* FOOTER */
 .footer {
