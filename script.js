@@ -6,5 +6,6 @@ const rainbowMode = document.getElementById("rainbowMode");
 const eraserBtn = document.getElementById("eraserBtn");
 const clearBtn = document.getElementById("clearBtn");
 const slider = document.getElementById("myRange");
+const sliderDisplay = document.getElementsByClassName("gridSizeDisplay");
 
 
