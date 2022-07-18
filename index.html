@@ -18,46 +18,33 @@
     <body>
         <div class="title">
             <h1>Etch-A-Sketch</h1>
-            <h3>Click & Drag to Draw!</h3>
+            <h3>Hover to Draw? Or Click & Drag?</h3>
         </div>
 
         <div class="container">
-
-            <div class="selections left">
+            <!-- selections -->
+            <div class="selections">
                 <div class="color">
 
                 </div>
                 <!-- color picker -->
                 <input type="color" id="colorPicker" value="#273E2E">
                 <!-- color mode -->
-                <button class="selectionBtn mode" id="colorMode">
-                    <div>Color Mode</div>
-                </button>
+                <button class="selectionBtn mode" id="colorMode">Color Mode</button>
                 <!-- rainbow mode -->
-                <button class="selectionBtn mode" id="rainbowMode">
-                    <div>Rainbow Mode</div>
-                </button>
+                <button class="selectionBtn mode" id="rainbowMode">Rainbow Mode</button>
                 <!-- eraser button -->
-                <button class="selectionBtn mode" id="eraserBtn">
-                    <div>Eraser</div>
-                </button>
+                <button class="selectionBtn mode" id="eraserBtn">Eraser Mode</button>
                 <!-- clear button-->
-                <button class="selectionBtn mode" id="clearBtn">
-                    <div>Clear</div>
-                </button>
+                <button class="selectionBtn mode" id="clearBtn">Clear Grid</button>
                 <!-- grid size display-->
-                <div class="gridSizeDisplay">
-                </div>
+                <div class="gridSizeDisplay">16 x 16</div>
                 <!-- grid size slider -->
-                <div class="sliderContainer">
-                    <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
-                </div>
+                <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
 
             </div>
-
-            <div class="grid right">
-
-            </div>
+            <!-- grid -->
+            <div class="grid"></div>
         </div>
 
         <div class="footer">

@@ -12,16 +12,15 @@
     margin: 0;
     padding: 0;
 }
-
 /* TAG STYLING*/
 h1 {
     color: var(--forestgreen);
     font-family: 'VT323', monospace;
-    font-size: 60px;
+    font-size: 75px;
 }
 
 h3 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 button, input {
@@ -38,22 +37,19 @@ button, input {
 }
 
 .container {
+    align-items: center;
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    gap: 50px;
+    justify-content: center;
+
 }
 
 /* SELECTIONS DIV SECTION */
-.left, .right {
+.selections {
     align-items: center;
     display: flex;
-    gap: 25px;
-}
-
-
-.selections {
-    display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 
 /* color picker button */
