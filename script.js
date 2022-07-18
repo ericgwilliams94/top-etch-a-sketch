@@ -7,5 +7,9 @@ const eraserBtn = document.getElementById("eraserBtn");
 const clearBtn = document.getElementById("clearBtn");
 const slider = document.getElementById("myRange");
 const sliderDisplay = document.getElementsByClassName("gridSizeDisplay");
-
+// initial grid size
+var output = slider.value;
+// display grid size above slider
+sliderDisplay.innerHTML = "`${slider}`"
+// calculate cell size for grid
 
