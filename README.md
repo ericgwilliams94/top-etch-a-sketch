@@ -13,6 +13,6 @@ My attempt on The Odin Project's "Etch-A-Sketch" assignment.
 
 Here is a [live preview](https://ericgwilliams94.github.io/top-etch-a-sketch/) for you play around with.
 
-![Alt text](https://giphy.com/gifs/p6BLiLlOXoALUTFoWv](https://media.giphy.com/media/p6BLiLlOXoALUTFoWv/giphy.gif)
+![Alt text](https://media.giphy.com/media/p6BLiLlOXoALUTFoWv/giphy.gif)
 
 ## Not mobile friendly...
