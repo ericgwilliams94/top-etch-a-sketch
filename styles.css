@@ -60,7 +60,6 @@ button.active {
 /* color picker button */
 #colorPicker {
     border: none;
-    border-radius: 100%;
     height: 75px;
     padding: 0;
     width: 75px;
