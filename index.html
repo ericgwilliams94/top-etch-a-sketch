@@ -18,7 +18,7 @@
     <body>
         <div class="title">
             <h1>Etch-A-Sketch</h1>
-            <h3>Hover to Draw? Or Click & Drag?</h3>
+            <h3>Hover to Draw</h3>
         </div>
 
         <div class="container">
@@ -38,13 +38,13 @@
                 <!-- clear button-->
                 <button class="selectionBtn mode" id="clearBtn">Clear Grid</button>
                 <!-- grid size display-->
-                <div class="gridSizeDisplay">16 x 16</div>
+                <div class="gridSizeDisplay" id="gridSizeDisplay">16 x 16</div>
                 <!-- grid size slider -->
                 <input type="range" min="1" max="100" value="16" class="slider" id="myRange">
 
             </div>
             <!-- grid -->
-            <div class="grid"></div>
+            <div class="grid" id="grid"></div>
         </div>
 
         <div class="footer">

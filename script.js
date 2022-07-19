@@ -2,19 +2,23 @@
 const defaultColor = "#273E2E";
 const startMode = "color";
 const gridSize = 16;
-const grid = document.getElementsByClassName("grid");
+const grid = document.getElementById("grid");
 const colorPicker = document.getElementById("colorPicker");
 const colorMode = document.getElementById("colorMode");
 const rainbowMode = document.getElementById("rainbowMode");
 const eraserBtn = document.getElementById("eraserBtn");
 const clearBtn = document.getElementById("clearBtn");
 const slider = document.getElementById("myRange");
-const sliderDisplay = document.getElementsByClassName("gridSizeDisplay");
+const sliderDisplay = document.getElementById("gridSizeDisplay");
 
 // establish temporary variables
 let currColor = defaultColor;
 let currMode = startMode;
 let currSize = gridSize;
+
+let mouseDown = false
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
 
 // function to update currColor
 function changeColor(newColor) {
@@ -49,8 +53,8 @@ slider.onchange = (x) => updateSize(x.target.value);
 
 // updateSize function
 function updateSize(v) {
-    setSize(v);
-    updateGridDislay(v);
+    changeSize(v);
+    updateGridDisplay(v);
     refreshGrid();
 }
 
@@ -96,7 +100,33 @@ function fillCell(x) {
     } else if (currMode == "color" ) {
         x.target.style.backgroundColor = currColor;
     } else if (currMode == "eraser") {
-        x.target.style.backgroundColor = "#FFFFFF"
+        x.target.style.backgroundColor = "#F5F5F5"
     }
 }
 
+// give active mode styling
+function activeClass(mode) {
+    // remove active from buttons beforehand
+    if (currMode == "color") {
+        colorMode.classList.remove("active");
+    } else if (currMode == "rainbow") {
+        rainbowMode.classList.remove("active");
+    } else if (currMode == "eraser") {
+        eraserBtn.classList.remove("active")
+    }
+
+    // add active class to necessary button
+    if (mode == "color") {
+        colorMode.classList.add("active");
+    } else if (mode == "rainbow") {
+        rainbowMode.classList.add("active");
+    } else if (mode == "eraser") {
+        eraserBtn.classList.add("active")
+    }
+}
+
+// start functions on page load
+window.onload = () => {
+    createGrid(gridSize);
+    activeClass(startMode);
+}
